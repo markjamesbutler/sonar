@@ -1,5 +1,6 @@
 <% content_for :script do %>
-  <script data-main="<%= ApplicationController.root_context -%>/javascripts/quality-gate/app" src="<%= ApplicationController.root_context -%>/javascripts/third-party/require.js"></script>
+  <script data-main="<%= ApplicationController.root_context -%>/javascripts/quality-gate/_app" src="<%= ApplicationController.root_context -%>/javascripts/third-party/require.js"></script>
+  <!--<script data-main="<%= ApplicationController.root_context -%>/javascripts/DEFINED IN POM.XML/quality-gate/_app" src="<%= ApplicationController.root_context -%>/javascripts/third-party/require.js"></script>-->
 <% end %>
 
 <div class="quality-gate-page-loader">

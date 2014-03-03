@@ -1,36 +1,12 @@
-requirejs.config
-  baseUrl: "#{baseUrl}/javascripts"
-
-  paths:
-    'backbone': 'third-party/backbone'
-    'backbone.marionette': 'third-party/backbone.marionette'
-    'handlebars': 'third-party/handlebars'
-    'moment': 'third-party/moment'
-    'select-list': 'common/select-list'
-
-  shim:
-    'backbone.marionette':
-      deps: ['backbone']
-      exports: 'Marionette'
-    'backbone':
-      exports: 'Backbone'
-    'handlebars':
-      exports: 'Handlebars'
-    'moment':
-      exports: 'moment'
-    'select-list':
-      exports: 'SelectList'
-
-
-requirejs [
+define [
   'backbone', 'backbone.marionette', 'handlebars',
-  'quality-gate/collections/quality-gates',
-  'quality-gate/collections/metrics',
-  'quality-gate/views/quality-gate-sidebar-list-view',
-  'quality-gate/views/quality-gate-actions-view',
-  'quality-gate/views/quality-gate-edit-view',
-  'quality-gate/router',
-  'quality-gate/layout',
+  'cs!quality-gate/collections/quality-gates',
+  'cs!quality-gate/collections/metrics',
+  'cs!quality-gate/views/quality-gate-sidebar-list-view',
+  'cs!quality-gate/views/quality-gate-actions-view',
+  'cs!quality-gate/views/quality-gate-edit-view',
+  'cs!quality-gate/router',
+  'cs!quality-gate/layout',
   'common/handlebars-extensions'
 ], (
   Backbone, Marionette, Handlebars,

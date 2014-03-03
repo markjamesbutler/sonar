@@ -1,9 +1,9 @@
 define [
   'backbone.marionette',
   'handlebars',
-  'quality-gate/models/condition',
-  'quality-gate/views/quality-gate-detail-condition-view',
-  'quality-gate/views/quality-gate-detail-conditions-empty-view'
+  'cs!quality-gate/models/condition',
+  'cs!quality-gate/views/quality-gate-detail-condition-view',
+  'cs!quality-gate/views/quality-gate-detail-conditions-empty-view'
 ], (
   Marionette,
   Handlebars,

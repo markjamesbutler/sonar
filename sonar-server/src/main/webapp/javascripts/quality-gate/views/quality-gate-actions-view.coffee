@@ -1,7 +1,7 @@
 define [
   'backbone.marionette',
   'handlebars',
-  'quality-gate/models/quality-gate'
+  'cs!quality-gate/models/quality-gate'
 ], (
   Marionette,
   Handlebars,

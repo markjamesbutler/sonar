@@ -1,15 +1,5 @@
-({
-  appDir: '.',
-  baseUrl: '.',
-  dir: 'DEFINED IN POM.XML',
-  skipDirOptimize: true,
-
-  modules: [
-  	{ name: 'quality-gate/_app', exclude: ['cs', 'coffee-script'] },
-  	{ name: 'issues/app' },
-  	{ name: 'measures/app' },
-  	{ name: 'common/select-list' }
-  ],
+requirejs.config({
+  baseUrl: baseUrl + '/javascripts',
 
   paths: {
     'backbone': 'third-party/backbone',
@@ -36,5 +26,10 @@
     'select-list': {
       exports: 'SelectList'
     }
-  }
-})
+  },
+
+  waitSeconds: 0
+});
+
+
+requirejs(['cs!quality-gate/app'], function() { });

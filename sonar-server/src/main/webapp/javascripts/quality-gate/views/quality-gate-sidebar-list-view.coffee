@@ -1,8 +1,8 @@
 define [
   'backbone.marionette',
   'handlebars',
-  'quality-gate/models/quality-gate',
-  'quality-gate/views/quality-gate-sidebar-list-item-view'
+  'cs!quality-gate/models/quality-gate',
+  'cs!quality-gate/views/quality-gate-sidebar-list-item-view'
 ], (
   Marionette,
   Handlebars,

@@ -1,6 +1,6 @@
 define [
   'backbone',
-  'quality-gate/models/metric'
+  'cs!quality-gate/models/metric'
 ], (
   Backbone,
   Metric
