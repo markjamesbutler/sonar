@@ -1,3 +1,52 @@
+a {
+  font-family: 'Open Sans', sans-serif !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+.widget {
+  padding: 10px 20px 20px !important;
+  border: none !important;
+}
+
+.widget-title {
+  padding: 20px 20px 0 !important;
+  background: none !important;
+}
+
+.widget-title,
+.widget-title a {
+  text-transform: uppercase !important;
+  color: #333 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+.dashboard-column {
+  margin: 0 !important;
+}
+
+#dashboard .block {
+  margin: 0 !important;
+  transition: all 0.2s ease;
+}
+
+#dashboard .block:hover {
+  background: #f6f6f6;
+}
+
+table.data > tbody {
+  border: none !important;
+}
+
+.even {
+  background: #f6f6f6 !important;
+}
+
+
 /*
  * SonarQube, open source software quality management tool.
  * Copyright (C) 2008-2013 SonarSource
